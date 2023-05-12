@@ -30,7 +30,7 @@ const IndexPage: NextPage<Props> = ({ initialImageUrl }) => {
 };
 export default IndexPage;
 
-export const GetServerSideProps: GetServerSideProps<Props> = async () => {
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const image = await fetchImage();
   return {
     props: {
